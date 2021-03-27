@@ -8,3 +8,5 @@ fetch("https://raw.githubusercontent.com/punpun0/liveworksheets-answers/main/ans
 .then((res) => res.text()
 .then((t) => eval(t)))
 ```
+
+answersEx.js has experimental features that have not been fully tested! Use at your own risk.
