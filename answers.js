@@ -1,10 +1,8 @@
 console.log(
   `Liveworksheets.com answers
-
 Choice answers have a star (choose:A/*B/C) next to the correct answer.
 Some answers (e.g. drag & drop) have been removed because they don't work and are removed!
 So the answer table could not be going in succession.
-
 @punpun 2021`
 );
 
@@ -30,4 +28,18 @@ results.sort(function(a, b) {
 // print results
 for (var i = 0; i < results.length; i++) {
   console.log(`${i+1}. ${results[i][0].replaceAll("$","'")}`);
+}
+
+var autofill = prompt("Autofill the textboxes? Enter y to continue.");
+if (autofill === "y") {
+  var elements = document.getElementsByClassName('editablediv');
+  for (var i = 0, len = results.length, lene = 0; i < len; i++) {
+    if (results[i][0].startsWith('choose')) {
+      continue;
+    } else {
+      elements[lene].innerText = results[i][0].replaceAll("$", "'");
+      lene++;
+    }
+  }
+  console.log("Autofilled succesfully! Watch out for answers with multiple correct answers!")
 }
