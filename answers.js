@@ -1,8 +1,10 @@
 console.log(
   `Liveworksheets.com answers
+
 Choice answers have a star (choose:A/*B/C) next to the correct answer.
-Some answers (e.g. drag & drop) have been removed because they don't work and are removed!
-So the answer table could not be going in succession.
+Some answers (e.g. drag & drop) don't work and are removed!
+So the answer table could be going not in succession.
+
 @punpun 2021`
 );
 
