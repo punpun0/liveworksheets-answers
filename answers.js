@@ -14,7 +14,7 @@ var results = [];
 
 for (var i = 0, len = data.length; i < len; i++) {
   // skip unnecesary info and answers that are not working or haven't been tested yet
-  if (data[i][0].startsWith('playmp3') || data[i][0].startsWith('join') || data[i][0].startsWith('drag') || data[i][0].startsWith('drop') || data[i][0].startsWith('select') || data[i][0].startsWith('tick') || data[i][0].startsWith('link') || data[i][0].startsWith('speak') || data[i][0].startsWith('listen') || data[i][0].startsWith('value')) {
+  if (data[i][0].startsWith('playmp3') || data[i][0].startsWith('join') || data[i][0].startsWith('drag') || data[i][0].startsWith('drop') || data[i][0].startsWith('select') || data[i][0].startsWith('tick') || data[i][0].startsWith('link') || data[i][0].startsWith('speak') || data[i][0].startsWith('listen') || data[i][0].startsWith('value') || data[i][0].startsWith('AUTOR')) {
     continue;
   } else {
     // grab the answer and the Y axis coordinates
